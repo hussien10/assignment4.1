@@ -11,6 +11,7 @@
        }
        $tmp=$_FILES["image"]["tmp_name"];
        move_uploaded_file($tmp,"uploads/".uploadName());
+       header("location:upload.php");
     }
     else{
         header("location:upload.php");
